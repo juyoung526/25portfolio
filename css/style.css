@@ -86,6 +86,9 @@
     display: flex;
     gap:25px;
   }
+  header .menu li {
+    margin-right: 20px;
+  }
   header .menu a {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400px;
@@ -416,16 +419,18 @@
   #section3 .de_right img.on{
     display:block;
   }
-    /* section4 */
-    #section4 {
-      width: 100%;
-      height: 100vh;
-      position: relative;
-      box-sizing: border-box;
-      border-top:1px solid #222;
-      border-bottom:1px solid #222;
-      overflow:hidden;
-    }
+   
+
+  /* section4 */
+  #section4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+    overflow:hidden;
+  }
    #section4 .cont{
     width:100%;
     height:100vh;
@@ -450,11 +455,7 @@
    }
    #section4 .cont .subTitle li.on{
     background:#fff;
-   }
-   #section4 .cont h3{
-    font-size:80px;
-    font-family: "Black Ops One", system-ui;
-   }
+   }  
    #section4 .text_wrap{
     width:1000px;
     height:400px;
@@ -475,6 +476,10 @@
     display:flex;
    }
    #section4 .text_wrap li.back{
+    width:100%;
+    display:flex;
+   }
+   #section4 .text_wrap li.back{
     position:absolute;
     top:0px;
     left:100%;
@@ -488,38 +493,37 @@
     background:#fff;
     text-align:center;
     padding:20px;
-    margin-top:100px;
-    
+    margin-top:100px;    
    }
-    /* section4 */
+   #section4 .text_wrap .in_btn a{
+    font-size:28px;
+   }
+   
+  
+   /* section5 */
   #section5 {
     box-sizing: border-box;
     padding: 200px;
     position: relative;
   }
-
   #section5 .bBox {
     text-align: right;
     position: relative;
   }
-
   #section5 .big {
     font-size: 100px;
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
     font-style: normal;
   }
-
   #section5 .big li:hover {
     -webkit-text-stroke: 1px #222;
     color: transparent;
     cursor: pointer;
   }
-
   #section5 .big .on {
     animation: bling infinite 1.5s ease;
   }
-
   @keyframes bling {
     0% {
       -webkit-text-stroke: 1px #222;
@@ -530,7 +534,6 @@
       color: #222;
     }
   }
-
   #section5 .sBox {
     font-family: "Black Ops One", system-ui;
     text-align: center;
@@ -539,12 +542,10 @@
     left: 10%;
     transform: translateY(-50%);
   }
-
   #section5 .small li {
     opacity: 0;
     font-size: 35px;
   }
-
   #footer {
     font-family: "Black Ops One", system-ui;
     width: 100%;
